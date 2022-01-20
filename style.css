@@ -16,6 +16,8 @@
   --padding-middle: 10px;
   --padding-big: 15px;
   --padding-large: 40px;
+  --img-size: 100px;
+  --item-size: 38rem;
 }
 
 * {
@@ -37,6 +39,8 @@ header {
 header > .title {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  position: absolute;
+  left: 47%;
 }
 
 .part {
@@ -44,11 +48,13 @@ header > .title {
   list-style: none;
   text-transform: uppercase;
   font-size: var(--font-mini);
+  padding: 10px;
 }
 .part .partList {
   margin-right: var(--m-right);
   text-decoration: none;
   color: var(--lightgray-color);
+  padding: 10px;
 }
 
 .loginAndcart {
@@ -69,12 +75,13 @@ header > .title {
 
 /* introduce */
 .introduce {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   border-bottom: 1px solid black;
   background-color: var(--green-color);
 }
 .introText {
-  flex: 1;
   display: flex;
   flex-direction: column;
   padding: 50px var(--padding-big);
@@ -105,4 +112,155 @@ header > .title {
 
 .introText .ShopNow:hover {
   cursor: pointer;
+}
+
+/* jomalon */
+.jomalon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: var(--item-size) var(--item-size);
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+
+.jomalon img {
+  width: var(--img-size);
+  height: var(--img-size);
+}
+
+.jomalon .jomalon_intro {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: var(--item-color);
+}
+
+.jomalon .jomalon_intro .num {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.jomalon .jomalon_intro .infor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jomalon .jomalon_intro .infor .title {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.jomalon .jomalon_intro .infor .Shopjomalon {
+  border: none;
+  background-color: var(--item-color);
+  margin-top: 20px;
+  display: inline;
+  border-bottom: 1px solid black;
+}
+.jomalon .jomalon_intro .infor .Shopjomalon:hover {
+  cursor: pointer;
+}
+
+.jomalon .item1 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1px solid black;
+  background-color: var(--item-color);
+  position: relative;
+}
+.jomalon .item1 .name {
+  font-size: var(--font-middle);
+}
+
+.jomalon .item1 .feature {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.jomalon .item1 .feature li {
+  margin-right: 5px;
+  font-size: var(--font-mini);
+  margin-top: 5px;
+  color: var(--lightgray-color);
+}
+.jomalon .item1 .price {
+  margin-top: 7px;
+}
+.jomalon .item1 .itemImg {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--item-color);
+}
+
+.jomalon .item2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-color: var(--item-color);
+  position: relative;
+}
+.jomalon .item2 .name {
+  font-size: var(--font-middle);
+}
+
+.jomalon .item2 .feature {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.jomalon .item2 .feature li {
+  margin-right: 5px;
+  font-size: var(--font-mini);
+  margin-top: 5px;
+  color: var(--lightgray-color);
+}
+.jomalon .item2 .price {
+  margin-top: 7px;
+}
+.jomalon .item2 .itemImg {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--item-color);
+}
+
+.jomalon .item3 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  background-color: var(--item-color);
+  position: relative;
+}
+.jomalon .item3 .name {
+  font-size: var(--font-middle);
+}
+
+.jomalon .item3 .feature {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.jomalon .item3 .feature li {
+  margin-right: 5px;
+  font-size: var(--font-mini);
+  margin-top: 5px;
+  color: var(--lightgray-color);
+}
+.jomalon .item3 .price {
+  margin-top: 7px;
+}
+.jomalon .item3 .itemImg {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--item-color);
 }
