@@ -51,9 +51,6 @@ header > .title {
   font-size: var(--font-mini);
   padding: 10px;
 }
-.part li:hover {
-  background-color: #6a6753;
-}
 
 header .plusBtn {
   display: none;
@@ -129,45 +126,18 @@ header .plusBtn {
     display: flex;
     flex-direction: column;
   }
+  .part {
+    flex-direction: column;
+  }
+  .loginAndcart {
+  }
   header {
     position: relative;
     padding: 25px;
     flex-direction: column;
   }
-  header .title {
-    left: 38%;
-  }
-  .part {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%;
-  }
-  .part li {
-    font-size: 15px;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-  }
-  .loginAndcart {
-    display: none;
-  }
-  .part li {
-    margin-bottom: 10px;
-  }
-
   header .plusBtn {
     display: block;
     position: absolute;
-    left: 10px;
-    top: 25px;
-  }
-
-  .part.view {
-    display: flex;
-  }
-  .loginAndcart.view {
-    display: flex;
   }
 }

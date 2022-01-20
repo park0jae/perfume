@@ -115,6 +115,28 @@
   height: 21rem;
   background-color: var(--item-color);
   z-index: 1;
+  opacity: 1;
+}
+.jomalon .item1 .itemImg:hover {
+  animation: flash 2s infinite;
+}
+.jomalon .item2 .itemImg:hover {
+  animation: flash 2s infinite;
+}
+
+.jomalon .item3 .itemImg:hover {
+  animation: flash 2s infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .jomalon .item3 {
